@@ -1,7 +1,7 @@
-# Boeing Dataset Analysis Project
+# Ecommerce Customer Churn Dataset Analysis Project
 
 ## Overview
-Comprehensive data analysis pipeline for Boeing-related datasets, encompassing data cleaning, statistical analysis, visualization, and executive reporting.
+Comprehensive data analysis pipeline for multiple datasets, encompassing data cleaning, statistical analysis, visualization, and executive reporting.
 
 ---
 
@@ -10,28 +10,35 @@ Comprehensive data analysis pipeline for Boeing-related datasets, encompassing d
 CleanThisData/
 ├── 1. Raw Dataset/               # Original, unprocessed data files
 ├── 2. Cleaned Dataset/           # Processed and validated data
-├── 3. Calculation & Pivot table/ # Statistical analysis and aggregations
-├── 4. Dashboard/                 # Interactive visualizations and dashboards
+├── 3. Calculation & Pivot table/ # KPIs, statistical analysis, aggregations
+├── 4. Dashboard/                 # Interactive visualizations and KPI dashboards
 ├── 5. Documentation/             # Technical documentation and reports
 └── 6. Presentation/              # Executive presentations and deliverables
 ```
 
 ---
 
-## Dataset Specifications
+## Datasets
 
-### File Details
-| Attribute | Value |
-|-----------|-------|
-| **Filename** | TBD |
-| **Total Records** | TBD |
-| **Primary Keys** | TBD |
-| **Date Range** | TBD |
+### Dataset 1: E-commerce Customer Behavior (Primary)
+**Source:** [Kaggle - E-commerce Customer Behavior Dataset](https://www.kaggle.com/datasets/dhairyajeetsingh/ecommerce-customer-behavior-dataset/data)
 
-### Data Dictionary
-| Column Name | Description | Data Type | Constraints |
-|-------------|-------------|-----------|-------------|
-| TBD | TBD | TBD | TBD |
+**Description:** Customer churn analysis dataset containing behavioral metrics, demographics, and engagement data.
+
+**Key Features:**
+- Customer demographics (Age, Gender, Country, City)
+- Membership & engagement metrics (Login frequency, session duration, pages per session)
+- Purchase behavior (Total purchases, average order value, cart abandonment rate)
+- Customer service interactions (Calls, reviews, email engagement)
+- Financial metrics (Lifetime value, credit balance)
+- Churn indicator (Target variable)
+
+### Dataset 2: Boeing Historical Data (Secondary)
+**Source:** [Kaggle - Boeing Historical Airplane Orders & Deliveries](https://www.kaggle.com/datasets/nurielreuven/boeing-historical-airplane-orders-deliveries)
+
+**Description:** Historical records of Boeing aircraft orders and deliveries.
+
+**Status:** Pending ingestion
 
 ---
 
@@ -40,12 +47,34 @@ CleanThisData/
 ### Objectives
 - **Data Quality Assurance:** Identify and resolve data integrity issues
 - **Statistical Analysis:** Perform descriptive and inferential statistics
+- **KPI Development:** Build key performance indicators for business metrics
 - **Trend Analysis:** Identify patterns and anomalies across time series
 - **Visualization:** Create interactive dashboards for stakeholder insights
 - **Reporting:** Generate comprehensive analytical reports
 
-### Key Insights & Metrics
-- TBD
+### Key Performance Indicators (KPIs)
+
+**Customer Health Metrics:**
+- Churn Rate & Retention Rate
+- Customer Lifetime Value (CLV)
+- Average Order Value (AOV)
+- Purchase Frequency
+
+**Engagement Metrics:**
+- Login Frequency & Session Duration
+- Cart Abandonment Rate
+- Email Open Rate
+- Mobile App Usage Rate
+
+**Financial Metrics:**
+- Revenue per Customer
+- Credit Balance Utilization
+- Discount Impact on Purchases
+
+**Service Quality Metrics:**
+- Customer Service Call Volume
+- Returns Rate
+- Product Review Participation
 
 ---
 
@@ -65,10 +94,10 @@ CleanThisData/
 ## Technical Stack
 
 ### Tools & Technologies
-- **Data Processing:** TBD
-- **Analysis:** TBD
-- **Visualization:** TBD
-- **Reporting:** TBD
+- **Data Processing:** Python (Pandas), Excel
+- **Analysis:** Statistical analysis, Pivot tables, Aggregations
+- **Visualization:** Excel Dashboards, Charts, KPI Cards
+- **Reporting:** Executive summaries, Data documentation
 
 ---
 
@@ -86,10 +115,12 @@ CleanThisData/
 
 3. **Analysis & Calculations**
    - Perform statistical computations
+   - Calculate KPIs and business metrics
    - Generate pivot tables in `3. Calculation & Pivot table/`
 
 4. **Visualization**
-   - Build interactive dashboards
+   - Build interactive dashboards with KPI cards
+   - Create trend charts and comparison visuals
    - Store visualizations in `4. Dashboard/`
 
 5. **Documentation**
@@ -109,4 +140,4 @@ CleanThisData/
 
 ---
 
-*Generated for Boeing Dataset Analysis Project*
+*Multi-Dataset Analysis Project*
